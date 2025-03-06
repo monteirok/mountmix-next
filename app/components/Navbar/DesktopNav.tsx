@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavLink from "./NavLink";
 import { Mail } from "lucide-react";
 import InstagramIcon from "../ui/icons/InstagramIcon";
@@ -20,7 +21,9 @@ export default function DesktopNav() {
                 <div onClick={ComingSoon}>
                     <Mail strokeWidth={2} />
                 </div>
-                <NavLink url="https://instagram.com/mountain.mixology" target="_blank" text={<InstagramIcon />} />
+                <Link href="https://instagram.com/mountain.mixology" target="_blank">
+                    <InstagramIcon />
+                </Link>
             </div>
         </div>
     );

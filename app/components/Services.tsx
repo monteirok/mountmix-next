@@ -1,4 +1,3 @@
-import Link from "next/link";
 import GradientText from "./ui/GradientText";
 
 export default function Services() {
